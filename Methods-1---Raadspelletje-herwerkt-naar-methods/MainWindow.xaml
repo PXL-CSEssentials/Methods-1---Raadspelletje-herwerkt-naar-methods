@@ -10,6 +10,5 @@
         <Label Content="Raad zo snel mogelijk het willekeurig getal tussen 1 en 100." HorizontalAlignment="Left" Height="38" Margin="128,33,0,0" VerticalAlignment="Top" Width="592" FontSize="20" FontWeight="Bold" Foreground="#FFDA6128" />
         <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Height="39" Margin="141,160,0,0" VerticalAlignment="Top" Width="252" Click="startButton_Click" />
         <Button x:Name="closeButton" Content="Sluiten" HorizontalAlignment="Left" Height="39" Margin="141,229,0,0" VerticalAlignment="Top" Width="252" Click="closeButton_Click"/>
-        <Image x:Name="thumbsImage" HorizontalAlignment="Left" Height="245" Margin="478,115,0,0" VerticalAlignment="Top" Width="242" Source="duimenOmhoog.jpg" Stretch="Fill"/>
     </Grid>
 </Window>
