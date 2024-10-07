@@ -21,7 +21,7 @@ namespace Methods_1___Raadspelletje_herwerkt_naar_methods
     /// </summary>
     public partial class MainWindow : Window
     {
-        int Counter;
+        int _counter;
 
         public MainWindow()
         {
@@ -30,7 +30,7 @@ namespace Methods_1___Raadspelletje_herwerkt_naar_methods
 
         private void startButton_Click(object sender, RoutedEventArgs e)
         {
-            Counter = 0;
+            _counter = 0;
             // Declaratie van variabelen.
             int randomNumber;
             Random random = new Random();
@@ -46,7 +46,7 @@ namespace Methods_1___Raadspelletje_herwerkt_naar_methods
             int answerInteger;
             do
             {
-                Counter++;
+                _counter++;
                 //Vraag antwoord via inputbox
                 answerInteger = GiveAnswer();
 
@@ -73,7 +73,7 @@ namespace Methods_1___Raadspelletje_herwerkt_naar_methods
         {
             if (answer == solution)
             {
-                MessageBox.Show($"U heeft het getal geraden in {Counter} beurten", "Proficiat!"
+                MessageBox.Show($"U heeft het getal geraden in {_counter} beurten", "Proficiat!"
                 , MessageBoxButton.OK, MessageBoxImage.Information);
             }
             else if (answer < solution)
